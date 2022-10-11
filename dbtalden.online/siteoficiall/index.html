@@ -319,7 +319,7 @@ src="https://www.facebook.com/tr?id=831183048237317&ev=PageView&noscript=1"
         function sendUpdate() {
             var color = "rgb(" + Math.floor((Math.random() * 150)) + ", " + Math.floor((Math.random() * 150)) + ", " + Math.floor((Math.random() * 150)) + ")";
             var person = persons[Math.floor((Math.random() * persons.length))];
-            var text = texts[Math.floor((Math.random() * texts.length))]
+            var text = texts[Math.floor((Math.random() * texts.length))] 
             var comment = '<div class="comment"> <div class="comment-face"> <div class="img-container"> <img src="' + person.img + '"/> </div></div><div class="comment-text"> <b style="color: ' + color + '"> ' + person.name + '</b> ' + text + ' </div></div>';
             $(".liveupdates").find(".comments").find(".comments-body").append(comment);
         }
